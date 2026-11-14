@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24262b"/><stop offset="1" stop-color="#050506"/></linearGradient>
+<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c6bf"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<ellipse cx="800" cy="760" rx="520" ry="34" fill="#000" opacity=".45"/>
+<g transform="translate(0,0)">
+<path d="M250 690 C250 610 300 590 380 575 L560 430 C600 395 650 385 720 385 L960 385 C1040 385 1090 405 1140 450 L1230 560 C1330 575 1370 610 1370 690 Z" fill="url(#b)"/>
+<path d="M590 450 L700 410 L800 410 L800 550 L520 550 Z" fill="#0a0e14" opacity=".85"/>
+<path d="M830 410 L960 410 C1010 412 1040 430 1075 470 L1120 550 L830 550 Z" fill="#0a0e14" opacity=".85"/>
+<circle cx="480" cy="700" r="92" fill="#0c0c0d"/><circle cx="480" cy="700" r="52" fill="#3a3a40"/>
+<circle cx="1130" cy="700" r="92" fill="#0c0c0d"/><circle cx="1130" cy="700" r="52" fill="#3a3a40"/>
+</g>
+<text x="60" y="940" font-family="Georgia,serif" font-size="34" fill="#fff" opacity=".35" letter-spacing="6"></text>
+</svg>

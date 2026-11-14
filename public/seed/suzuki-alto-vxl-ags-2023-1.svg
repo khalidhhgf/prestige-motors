@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+<radialGradient id="g" cx="50%" cy="38%" r="85%"><stop offset="0" stop-color="#2f3238"/><stop offset="1" stop-color="#0d0e10"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ececec"/><stop offset=".55" stop-color="#ececec"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></linearGradient>
+<linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect y="760" width="1600" height="240" fill="#000" opacity=".28"/>
+<ellipse cx="778" cy="778" rx="560" ry="30" fill="#000" opacity=".55"/>
+<g transform="translate(-22,0)">
+<path d="M230 700 C230 630 270 615 340 605 L470 450 C500 420 540 410 600 410 L1010 410 C1090 412 1130 440 1170 490 L1260 610 C1350 625 1380 650 1380 700 Z" fill="url(#b)" stroke="#fff" stroke-opacity=".22" stroke-width="3"/>
+<path d="M230 700 C230 630 270 615 340 605 L470 450 C500 420 540 410 600 410 L1010 410 C1090 412 1130 440 1170 490 L1260 610 C1350 625 1380 650 1380 700 Z" fill="url(#f)"/>
+<path d="M510 470 L600 435 L780 435 L780 590 L440 590 Z M810 435 L1000 435 C1050 437 1085 465 1115 510 L1150 590 L810 590 Z" fill="#0b1018" opacity=".88" stroke="#fff" stroke-opacity=".18" stroke-width="2"/>
+<rect x="210" y="676" width="1190" height="14" fill="#000" opacity=".25"/>
+<g><circle cx="470" cy="712" r="96" fill="#0b0b0c"/><circle cx="470" cy="712" r="60" fill="#b9bcc4"/><circle cx="470" cy="712" r="24" fill="#2b2d33"/>
+<circle cx="1160" cy="712" r="96" fill="#0b0b0c"/><circle cx="1160" cy="712" r="60" fill="#b9bcc4"/><circle cx="1160" cy="712" r="24" fill="#2b2d33"/></g>
+</g>
+<text x="800" y="900" text-anchor="middle" font-family="Georgia,serif" font-size="40" fill="#fff" opacity=".5" letter-spacing="8">SUZUKI ALTO VXL AGS</text>
+</svg>
