@@ -7,3 +7,5 @@ uploads
 next-env.d.ts
 .pgdata
 .claude
+.vercel
+.env*
