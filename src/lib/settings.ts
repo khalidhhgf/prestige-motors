@@ -60,7 +60,13 @@ export const DEFAULT_SETTINGS: SiteSettings = {
 };
 
 export const getSettings = cache(async (): Promise<SiteSettings> => {
-  const rows = await db.setting.findMany();
+  let rows: { key: string; value: unknown }[] = [];
+  try {
+    rows = await db.setting.findMany();
+  } catch (e) {
+    // Never take the whole site down because settings could not be read (e.g. database restarting): use defaults.
+    console.error("getSettings: falling back to defaults", (e as Error).message?.slice(0, 120));
+  }
   const out: Record<string, unknown> = { ...DEFAULT_SETTINGS };
   for (const r of rows) out[r.key] = r.value;
   return out as SiteSettings;
