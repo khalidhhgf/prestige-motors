@@ -10,6 +10,9 @@ import { SITE_URL } from "@/lib/format";
 import { ToastProvider } from "@/components/ui/Toast";
 
 
+// Settings come from the database on every request, so nothing in the app is prerendered at build time.
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata(): Promise<Metadata> {
   const s = await getSettings();
   return {
