@@ -5,6 +5,8 @@
 :root {
   --accent: #b8935a;
   --accent-2: #8a6d3b;
+  --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   /* Darker tint of the accent for TEXT on light backgrounds (meets WCAG AA contrast) */
   --accent-ink: color-mix(in srgb, var(--accent) 58%, #000);
 }

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond } from "next/font/google";
+// Fonts are bundled with the app (no build-time or runtime requests to Google)
+import "@fontsource-variable/inter";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/600.css";
+import "@fontsource/cormorant-garamond/700.css";
 import "./globals.css";
 import { getSettings } from "@/lib/settings";
 import { SITE_URL } from "@/lib/format";
 import { ToastProvider } from "@/components/ui/Toast";
 
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const display = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display", display: "swap" });
 
 export async function generateMetadata(): Promise<Metadata> {
   const s = await getSettings();
@@ -23,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const s = await getSettings();
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable}`} style={{ "--accent": s.primaryColor, "--accent-2": s.secondaryColor } as React.CSSProperties}>
+    <html lang="en" style={{ "--accent": s.primaryColor, "--accent-2": s.secondaryColor } as React.CSSProperties}>
       <body>
         <ToastProvider>{children}</ToastProvider>
       </body>
